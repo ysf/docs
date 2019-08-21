@@ -19,6 +19,8 @@ sudo apt-get -y update
 sudo apt-get install -y dirmngr && sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 9DA31620334BD75D9DCB49F368818C72E52529D4
 ```
 
+Note: keyserver.ubuntu.com is not available via ipv6. In that case use keys.gnupg.net.
+
 ```bash
 echo "deb http://repo.mongodb.org/apt/debian stretch/mongodb-org/4.0 main" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list
 ```
